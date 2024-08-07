@@ -1,0 +1,181 @@
+:root {
+  --primary-color: #a01a58;
+  --secondary-color: #white;
+}
+* {
+  /* Below is the standard CSS code one should add to get rid of default margins and padding which most of tge HTML elements have */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  background-color: #455e89;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Title CSS */
+.title {
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 2.5em;
+  padding-block: 0.5em;
+  color: #fff;
+  cursor: pointer;
+  height: 80px;
+}
+
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  font-size: 16px;
+  min-height: 80px;
+  padding-block: 0.6em;
+  background-color: var(--secondary-color);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.navbar a {
+  all: unset;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  background-color: #495057;
+  align-items: center;
+}
+.navbar a:hover {
+  background-color: transparent;
+}
+.navbar #menu {
+  width: fit-content;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;
+  background-color: #495057;
+  color: white;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.navbar > .icon {
+  display: none;
+}
+#menu,
+#random,
+#start {
+  cursor: pointer;
+}
+
+/* Center css */
+.center {
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Added shadow to make page border free */
+  height: 420px;
+  width: 410px;
+  max-height: 731px;
+}
+.array {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100%;
+  height: 100%;
+  padding: 1rem;
+  flex-direction: row;
+  background-color: whitesmoke;
+}
+.cell {
+  display: flex;
+  align-items: flex-start;
+  flex: 0.5;
+  width: 0.000001%;
+  margin: 1px;
+  background-color: #6a4c93;
+  resize: horizontal;
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+.cell.done {
+  background-color: #ff595e;
+  border-color: #ff595e;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+.cell.visited {
+  border-color: #ffca3a;
+  background-color: #ffca3a;
+  color: white;
+  transition: 0.5s;
+}
+.cell.current {
+  border-color: #8ac926;
+  background-color: #8ac926;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+.cell.min {
+  background-color: #1982c4;
+  border-color: #1982c4;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+
+/* Footer CSS */
+.fa.fa-heart {
+  color: #eb2c13;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  color: #2c3e50;
+  padding: 1.6em;
+}
+.footer > p:nth-child(1) {
+  margin-bottom: 0.6em;
+}
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #212529;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    gap: 0.4em;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .navbar *,
+  .navbar a {
+    font-size: 14px;
+  }
+  .footer {
+    font-size: 18px;
+  }
+  a#random {
+    order: 4;
+  }
+  a.start {
+    order: 5;
+  }
+}
+@media screen and (max-width: 550px) {
+  .center {
+    width: 95%;
+  }
+}
