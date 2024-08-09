@@ -5,7 +5,7 @@ Here's an enhanced version of the README for your GitHub repository:
 # Sorting Algorithm Visualizer
 
 **Author:** Paras Agrawal  
-**Live Demo:** [Sorting Algorithms Visualizer](https://parasagrawal1709.github.io/Sorting-Algorithm-Visualizer/)  
+**Live Demo:** [Sorting Algorithms Visualizer](https://parasagrawal1709.github.io/Sorting-Algorithms-Visualizer/)  
 **Source Code:** [Sorting Algorithms Visualizer Code](https://github.com/parasagrawal1709/Sorting-Algorithms-Visualizer)
 
 ## Overview
